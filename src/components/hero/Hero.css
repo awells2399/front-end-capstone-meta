@@ -1,0 +1,64 @@
+.hero {
+  display: flex;
+  padding: 4rem;
+  background-color: var(--primary-green);
+  color: white;
+  height: 40vh;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 4rem;
+  z-index: -1;
+}
+
+.hero-img {
+  width: 50%;
+  height: 300px;
+}
+.hero-img img {
+  width: 80%;
+  height: 130%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.content {
+  width: 30%;
+}
+
+.content h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.reserve-btn {
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 940px) {
+  .hero {
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    background: url("../../assets/images/restauranfood.jpg") no-repeat center
+      center/cover;
+  }
+  .hero .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .reserve-btn {
+    position: absolute;
+    top: 80%;
+    left: 42%;
+  }
+}

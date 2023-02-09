@@ -1,0 +1,23 @@
+.weekly-specials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weekly-specials h1 {
+  color: black;
+}
+.weekly-heading {
+  display: flex;
+  width: 45%;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.item-cards {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
